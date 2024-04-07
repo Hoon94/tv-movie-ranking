@@ -14,6 +14,7 @@
 		783913172B8EBC140042B8EE /* TVMovieInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783913162B8EBC140042B8EE /* TVMovieInfo.plist */; };
 		78B020E32BC24A5E0066D278 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E22BC24A5E0066D278 /* ReviewViewController.swift */; };
 		78B020E52BC273480066D278 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E42BC273480066D278 /* Review.swift */; };
+		78B020E72BC2784F0066D278 /* ReviewNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E62BC2784F0066D278 /* ReviewNetwork.swift */; };
 		78DBB7532B8D041100D36AC4 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBB7522B8D041100D36AC4 /* NormalCollectionViewCell.swift */; };
 		78F1E2552B8AFFA500BFE4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */; };
 		78F1E2572B8AFFA500BFE4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1E2562B8AFFA500BFE4DF /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 		783913162B8EBC140042B8EE /* TVMovieInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TVMovieInfo.plist; sourceTree = "<group>"; };
 		78B020E22BC24A5E0066D278 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		78B020E42BC273480066D278 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		78B020E62BC2784F0066D278 /* ReviewNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewNetwork.swift; sourceTree = "<group>"; };
 		78DBB7522B8D041100D36AC4 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 		78F1E2512B8AFFA500BFE4DF /* TVMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				78F1E2772B8CBB7700BFE4DF /* Const.swift */,
 				78F1E2802B8CC50B00BFE4DF /* Network.swift */,
 				78F1E2822B8CC78600BFE4DF /* TVNetwork.swift */,
+				78B020E62BC2784F0066D278 /* ReviewNetwork.swift */,
 				78F1E2842B8CC85800BFE4DF /* MovieNetwork.swift */,
 				78F1E2862B8CC99000BFE4DF /* NetworkProvider.swift */,
 			);
@@ -247,6 +250,7 @@
 				78F1E27F2B8CC45B00BFE4DF /* MovieResult.swift in Sources */,
 				783913152B8E50080042B8EE /* HeaderView.swift in Sources */,
 				78B020E32BC24A5E0066D278 /* ReviewViewController.swift in Sources */,
+				78B020E72BC2784F0066D278 /* ReviewNetwork.swift in Sources */,
 				78F1E2592B8AFFA500BFE4DF /* ViewController.swift in Sources */,
 				78F1E2892B8CCBE700BFE4DF /* ButtonView.swift in Sources */,
 				78B020E52BC273480066D278 /* Review.swift in Sources */,

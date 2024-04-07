@@ -18,8 +18,8 @@ class Network<T: Decodable> {
         self.queue = ConcurrentDispatchQueueScheduler(qos: .background)
     }
     
-    func getItemList(path: String) -> Observable<T> {
-        let fullPath = "\(endpoint)\(path)?api_key=\(Bundle.main.apiKey)&language=ko"
+    func getItemList(path: String, language: String = "ko") -> Observable<T> {
+        let fullPath = "\(endpoint)\(path)?api_key=\(Bundle.main.apiKey)&language=\(language)"
         
         return RxAlamofire.data(.get, fullPath)
             .observe(on: queue)
