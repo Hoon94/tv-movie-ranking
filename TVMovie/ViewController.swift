@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 
 //레이아웃
-enum Section: Hashable {
+fileprivate enum Section: Hashable {
     case double
     case banner
     case horizontal(String)
@@ -18,7 +18,7 @@ enum Section: Hashable {
 }
 
 //셀
-enum Item: Hashable {
+fileprivate enum Item: Hashable {
     case normal(Content)
     case bigImage(Movie)
     case list(Movie)
@@ -221,8 +221,6 @@ class ViewController: UIViewController {
 
         return section
     }
-    
-    
     
     private func setDatasource() {
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
