@@ -15,6 +15,7 @@
 		78B020E32BC24A5E0066D278 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E22BC24A5E0066D278 /* ReviewViewController.swift */; };
 		78B020E52BC273480066D278 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E42BC273480066D278 /* Review.swift */; };
 		78B020E72BC2784F0066D278 /* ReviewNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E62BC2784F0066D278 /* ReviewNetwork.swift */; };
+		78B020E92BC27C390066D278 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E82BC27C390066D278 /* ReviewViewModel.swift */; };
 		78DBB7532B8D041100D36AC4 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBB7522B8D041100D36AC4 /* NormalCollectionViewCell.swift */; };
 		78F1E2552B8AFFA500BFE4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */; };
 		78F1E2572B8AFFA500BFE4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1E2562B8AFFA500BFE4DF /* SceneDelegate.swift */; };
@@ -47,6 +48,7 @@
 		78B020E22BC24A5E0066D278 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		78B020E42BC273480066D278 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		78B020E62BC2784F0066D278 /* ReviewNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewNetwork.swift; sourceTree = "<group>"; };
+		78B020E82BC27C390066D278 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 		78DBB7522B8D041100D36AC4 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 		78F1E2512B8AFFA500BFE4DF /* TVMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				78B020E22BC24A5E0066D278 /* ReviewViewController.swift */,
+				78B020E82BC27C390066D278 /* ReviewViewModel.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				78F1E2892B8CCBE700BFE4DF /* ButtonView.swift in Sources */,
 				78B020E52BC273480066D278 /* Review.swift in Sources */,
 				78DBB7532B8D041100D36AC4 /* NormalCollectionViewCell.swift in Sources */,
+				78B020E92BC27C390066D278 /* ReviewViewModel.swift in Sources */,
 				78F1E2812B8CC50B00BFE4DF /* Network.swift in Sources */,
 				78F1E2832B8CC78600BFE4DF /* TVNetwork.swift in Sources */,
 				78F1E2782B8CBB7700BFE4DF /* Const.swift in Sources */,
