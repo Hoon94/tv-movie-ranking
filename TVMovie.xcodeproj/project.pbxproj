@@ -12,6 +12,7 @@
 		783913132B8E43690042B8EE /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783913122B8E43690042B8EE /* ListCollectionViewCell.swift */; };
 		783913152B8E50080042B8EE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783913142B8E50080042B8EE /* HeaderView.swift */; };
 		783913172B8EBC140042B8EE /* TVMovieInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783913162B8EBC140042B8EE /* TVMovieInfo.plist */; };
+		78B020E32BC24A5E0066D278 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B020E22BC24A5E0066D278 /* ReviewViewController.swift */; };
 		78DBB7532B8D041100D36AC4 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBB7522B8D041100D36AC4 /* NormalCollectionViewCell.swift */; };
 		78F1E2552B8AFFA500BFE4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */; };
 		78F1E2572B8AFFA500BFE4DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1E2562B8AFFA500BFE4DF /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 		783913122B8E43690042B8EE /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		783913142B8E50080042B8EE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		783913162B8EBC140042B8EE /* TVMovieInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TVMovieInfo.plist; sourceTree = "<group>"; };
+		78B020E22BC24A5E0066D278 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		78DBB7522B8D041100D36AC4 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
 		78F1E2512B8AFFA500BFE4DF /* TVMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78B020E12BC24A270066D278 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				78B020E22BC24A5E0066D278 /* ReviewViewController.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		78DBB7512B8D03CA00D36AC4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 				78F1E2542B8AFFA500BFE4DF /* AppDelegate.swift */,
 				78F1E2562B8AFFA500BFE4DF /* SceneDelegate.swift */,
 				78F1E2582B8AFFA500BFE4DF /* ViewController.swift */,
+				78B020E12BC24A270066D278 /* Review */,
 				78DBB7512B8D03CA00D36AC4 /* Cells */,
 				78F1E28A2B8CEEC600BFE4DF /* ViewModel.swift */,
 				78F1E2882B8CCBE700BFE4DF /* ButtonView.swift */,
@@ -181,7 +192,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					78F1E2502B8AFFA500BFE4DF = {
 						CreatedOnToolsVersion = 14.3;
@@ -232,6 +243,7 @@
 			files = (
 				78F1E27F2B8CC45B00BFE4DF /* MovieResult.swift in Sources */,
 				783913152B8E50080042B8EE /* HeaderView.swift in Sources */,
+				78B020E32BC24A5E0066D278 /* ReviewViewController.swift in Sources */,
 				78F1E2592B8AFFA500BFE4DF /* ViewController.swift in Sources */,
 				78F1E2892B8CCBE700BFE4DF /* ButtonView.swift in Sources */,
 				78DBB7532B8D041100D36AC4 /* NormalCollectionViewCell.swift in Sources */,
@@ -269,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -301,6 +314,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -329,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -361,6 +376,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

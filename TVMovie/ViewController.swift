@@ -129,7 +129,10 @@ class ViewController: UIViewController {
             
             switch item {
             case .normal(let content):
-                print(content)
+                let navigationController = UINavigationController()
+                let viewController = ReviewViewController(id: content.id, contentType: content.type)
+                navigationController.viewControllers = [viewController]
+                self?.present(navigationController, animated: true)
             default:
                 print("default")
             }
