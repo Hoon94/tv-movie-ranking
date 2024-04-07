@@ -33,6 +33,7 @@ final class ReviewViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout.list(using: config)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(ReviewHeaderCollectionViewCell.self, forCellWithReuseIdentifier: ReviewHeaderCollectionViewCell.id)
+        collectionView.register(ReviewContentCollectionViewCell.self, forCellWithReuseIdentifier: ReviewContentCollectionViewCell.id)
         
         return collectionView
     }()
@@ -59,6 +60,19 @@ final class ReviewViewController: UIViewController {
         }
         
         setDataSource()
+        collectionView.rx.itemSelected.bind { [weak self] indexPath in
+            guard let item = self?.dataSource?.itemIdentifier(for: indexPath), var sectionSnapshot = self?.dataSource?.snapshot(for: .list) else { return }
+            
+            if case .header = item {
+                if sectionSnapshot.isExpanded(item) {
+                    sectionSnapshot.collapse([item])
+                } else {
+                    sectionSnapshot.expand([item])
+                }
+                
+                self?.dataSource?.apply(sectionSnapshot, to: .list)
+            }
+        }.disposed(by: disposeBag)
     }
     
     private func setDataSource() {
@@ -73,9 +87,11 @@ final class ReviewViewController: UIViewController {
                 
                 return cell
             case .content(let content):
-                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReviewHeaderCollectionViewCell.id, for: indexPath) as? ReviewHeaderCollectionViewCell else {
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReviewContentCollectionViewCell.id, for: indexPath) as? ReviewContentCollectionViewCell else {
                     return UICollectionViewCell()
                 }
+                
+                cell.configure(content: content)
                                 
                 return cell
             }
@@ -104,7 +120,9 @@ final class ReviewViewController: UIViewController {
                                           name: review.author.name.isEmpty ? review.author.username : review.author.name,
                                           url: review.author.imageURL)
                 let headerItem = Item.header(header)
+                let contentItem = Item.content(review.content)
                 sectionSnapshot.append([headerItem])
+                sectionSnapshot.append([contentItem], to: headerItem)
             }
             
             self?.dataSource?.apply(sectionSnapshot, to: .list)
